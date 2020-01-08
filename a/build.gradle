@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'pro.xway'
+version '1.0'
+sourceCompatibility = 1.8
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+jar {
+    destinationDirectory = file("$rootDir/install")
+}
